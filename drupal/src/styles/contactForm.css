@@ -1,0 +1,104 @@
+.contactForm {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  background: linear-gradient(
+      254.72deg,
+      rgba(255, 255, 255, 0.276) -114.85%,
+      rgba(255, 255, 255, 0) 69.04%
+    )
+    #040613;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(20px);
+}
+
+.contactFormHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color: wheat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.closeButton {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 24px; 
+  color: #333; 
+}
+
+.closeButton::before {
+  content: '✕'; 
+}
+
+.closeButton:hover {
+  color: #ff6666; 
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px; 
+  margin: 5px 0; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="tel"],
+.contactForm input[type="email"] {
+  padding: 20px; 
+}
+
+.contactForm button.secondAccessButton {
+  padding: 10px 20px; 
+  margin-top: 10px;
+  background: #f14d34;
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  border: 1px solid #f14d34;
+}
+
+.contactForm button.secondAccessButton:hover {
+  background-color: transparent; 
+  border: 1px solid #f14d34;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contactForm.active {
+  animation: popUp 0.5s forwards;
+}
+
+@media (max-width: 760px) {
+  .contactForm  {
+    position: fixed;
+    top: -20px;
+    right: 0;
+    left: 0;
+    padding: 0;
+    height: 100vh;
+  }  
+  .contactFormHeader {
+    padding: 20px;
+    font-size: 30px;
+  }
+}

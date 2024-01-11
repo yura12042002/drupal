@@ -1,0 +1,283 @@
+  footer {
+    position: relative;
+    z-index: 3;
+    height: 820px;
+    background: linear-gradient(
+        254.72deg,
+        rgba(255, 255, 255, 0.276) -114.85%,
+        rgba(255, 255, 255, 0) 69.04%
+      )
+      #040613;
+    padding-top: 120px;
+  }
+
+  .mainInfo {
+    height: 480px;
+    display: flex;
+    margin: 0 130px;
+    margin-bottom: 70px;
+  }
+
+  .first {
+    width: 480px;
+  }
+
+  .firstTitle {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.215;
+    margin-bottom: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .firstText {
+    line-height: 1.55;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(256, 256, 256, 0.7);
+    margin-bottom: 140px;
+  }
+
+  .firstNumber {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    line-height: 1.1;
+  }
+
+  .firstEmail {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    line-height: 1.1;
+  }
+
+  .second {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .secondInputFirst {
+    background: transparent;
+    border: 1px solid rgba(256, 256, 256, 0.3);
+    border-radius: 5px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 26px 24px;
+    color: #fff;
+  }
+
+  .secondInputLast {
+    background: transparent;
+    border: 1px solid rgba(256, 256, 256, 0.3);
+    border-radius: 5px;
+    line-height: 1.2;
+    height: 127px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 26px 24px;
+    color: #fff;
+  }
+
+  .secondAccess { 
+    padding-right: 10px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .secondAccessCheckbox {
+    height: 25px;
+    width: 28px; 
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .secondAccessCheckbox:checked::before {
+    content: '✓'; 
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 18px; 
+  }
+
+  .secondAccessText {
+    font-size: 12px;
+    color: #fff;
+    margin-left: 15px;
+  }
+
+  .secondAccessButton {
+    background: #f14d34;
+    border: 2px solid #f14d34;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    outline: 0;
+    box-shadow: none;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 20px 14px;
+    line-height: 1;
+    transition: background 0.4s ease; 
+    cursor: pointer;
+  }
+
+  .secondAccessButton:hover {
+    background: transparent;
+  }
+
+  .third {
+    border-top: 1px solid rgba(256, 256, 256, .3);
+    padding: 56px 130px;
+  }
+
+  .thirdText {
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .footerImgFirst {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: -1;
+  }
+
+  .footerImgSecond {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .firstMargin {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1250px) {
+    footer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .mainInfo {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: center;
+    }
+    .footerImgFirst {
+      width: 300px;
+      height: 200px;
+    }
+
+    .footerImgSecond {
+      width: 200px;
+      height: 100px;
+    }
+    .first {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .firstText {
+      margin-bottom: 50px;
+    }
+
+    .second {
+      margin: 0;
+      margin-bottom: 50px;
+      height: 600px;
+    }
+    .third {
+      width: 70%;
+    }
+    .secondAccessCheckbox {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .third {
+      width: 100%;
+    }
+    .secondAccessCheckbox {
+      width: 30px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 760px)  {
+    .second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 80%;
+    }
+    .firstNumber {
+      font-size: 20px;
+    }
+    .firstEmail {
+      font-size: 15px;
+    }
+    .footerImgFirst {
+      width: 50%;
+    }
+    .secondInputFirst {
+      width: 80%;
+    }
+    .secondInputLast {
+      width: 80%;
+    }
+    .secondAccessButton {
+      width: 80%;
+    }
+    .secondAccessCheckbox {
+      width: 30px;
+      height: 20px;
+    }
+    .secondAccess {
+      width: 80%;
+      display: flex;
+      align-items: center;
+    }
+
+    .third {
+      padding: 20px;
+      width: 80%;
+    }
+  }

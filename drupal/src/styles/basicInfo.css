@@ -1,0 +1,201 @@
+.basicInformationBlock {
+  display: flex;
+  margin-top: 50px;
+  width: 80%;
+  height: 100%;
+}
+
+.basicInformationBlockLeft {
+  width: 50%;
+  margin-right: 100px;
+}
+
+.basicInfoTitle {
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.basicInfoText {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 55px;
+}
+
+.basicInfoTarif {
+  background: transparent;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 20px;
+  width: 220px;
+  max-width: 100%;
+  text-align: center;
+  border: 2px solid #f14d34;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  transition: background-color 0.3s;
+}
+
+.basicInfoTarif:hover {
+  background-color: #f14d34;
+}
+
+.basicInfoTarifActive {
+  background-color: #f14d34;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 20px;
+  width: 220px;
+  max-width: 100%;
+  text-align: center;
+  border: 2px solid #f14d34;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  transition: background-color 0.3s;
+}
+
+.basicInformationBlockRight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  width: 65%;
+}
+
+.basicInfoAchievements {
+  border-left: 3px solid #f14d34;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  min-height: 80px;
+  max-height: 90px;
+  margin-bottom: 100px;
+  margin-right: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.basicInfoAchievementsFirst {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.basicInfoAchievementsFirstPart {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.basicInfoAchievementsFirstPartSize {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.basicInfoAchievementsSecond {
+  width: 160px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1196px) {
+  .basicInformationBlock {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .basicInformationBlock  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:0;
+  }
+
+  .basicInformationBlockLeft {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .basicInformationBlockRight {
+    width: 100%;
+  }
+  
+  .basicInfoTitle {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .basicInfoText {
+    font-size: 24px;
+    width: 100%;
+    line-height: 1;
+  }
+
+  .basicInformationBlockLeft {
+    margin: 0;
+  }
+}
+
+@media (max-width: 760px)  {
+  .basicInformationBlock {
+    width: 95%;
+  }
+
+  .basicInformationBlockRight {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .basicInfoAchievements {
+    margin: 10px;
+    width: 158px
+  }
+
+  .basicInfoAchievementsFirstPart {
+    font-size: 34px;
+  }
+
+  .basicInfoAchievementsSecond {
+    font-size: 10px;
+  }
+  
+  .basicInfoTitle {
+    font-size: 25px;
+    line-height: 1;
+  }
+  .basicInfoText {
+    font-size: 15px;
+  }
+
+}

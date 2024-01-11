@@ -1,0 +1,94 @@
+.service {
+  background-color: white;
+  padding-top: 100px;
+  color: #050C33;
+}
+
+.serviceBlock {
+  width: 1210px;
+  height: 716px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.serviceBlockHightTitle {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.serviceBlockHightDescription {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f5a73;
+}
+
+.serviceBlockFunctions {
+  width: 100%;
+  margin-top: 63px;
+  height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.serviceBlockFunctionsCard {
+  height: 194px;
+  width: 182px;
+  margin-right: 120px;
+  margin-bottom: 50px;
+}
+
+.serviceBlockFunctionsCardImg {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1210px) {
+  .serviceBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .serviceBlockFunctions {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .serviceBlockFunctionsCard {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .serviceBlock {
+    width: 90%;
+  }
+  .serviceBlockHightTitle {
+    font-size: 25px;
+    word-wrap: break-word;
+    line-height: normal;
+  }
+  .serviceBlockHightDescription {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+  .serviceBlockFunctionsCard {
+    margin: 10px;
+    width: 120px;
+    height: 100%;
+  }
+  .serviceBlockFunctionsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

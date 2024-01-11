@@ -1,0 +1,147 @@
+.keys {
+  height: 100%;
+  background-color: white;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keysTitle {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.keysBlock {
+  margin-left: 100px;
+  width: 1210px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keysBlockFirst {
+  position: relative;
+  width: 380px;
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.keysBlockSecond {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  width: 780px;
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.keysBlockThird {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 380px;
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.keysBlockFirstText {
+  width: 320px;
+  margin: 40px 30px 0 30px;
+  color: #050c33;
+}
+
+.keysBlockFirstTextTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.keysBlockFirstTextDate {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.keysBlockFirstTextDiscription {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4e5a73;
+}
+
+.keysBlockFirstTextTitleWhite {
+  position: absolute;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  width: 320px;
+  height: 44px;
+  margin: 40px;
+}
+
+.keysBlockFirstTextTitleWhiteAdd {
+  position: absolute;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  width: 320px;
+  height: 44px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width: 1350px) {
+  .keysBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .keysBlockSecond {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .keysBlockFirst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .keysBlockFirstImg{
+    width: 80%;
+  }
+}

@@ -1,0 +1,246 @@
+.support {
+  position: relative;
+  min-height: 1624px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supportBlock {
+  margin-top: 160px;
+  width: 1200px;
+  background: transparent;
+}
+
+.supportBlockTitle {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.supportBlockOptions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.supportBlockOptionsCard {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(5, 12, 51, 0.05);
+  width: 292px;
+  height: 292px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 27px;
+  position: relative;
+  z-index: 10;
+}
+
+.supportBlockOptionsCardNumber {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #4f5a73;
+}
+
+.supportBlockOptionsCardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.supportBlockOptionsCardDiscription {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4e5a73;
+  position: relative;
+  z-index: 3;
+}
+
+.supportBlockOptionsCardImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.supportBackground {
+  position: absolute;
+  margin-top: 700px;
+  width: 100%;
+  height: 839px;
+  z-index: 0;
+  background: linear-gradient(
+      254.72deg,
+      rgba(255, 255, 255, 0.276) -114.85%,
+      rgba(255, 255, 255, 0) 69.04%
+    ),
+    #040613;
+}
+
+.supportLaptop {
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 10;
+  max-width: 735px;
+}
+
+.supportBackgroundBlock {
+  margin-top: 405px;
+  margin-left: 730px;
+}
+
+.supportBackgroundBlockTitle {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.supportBackgroundBlockDiscription {
+  display: flex;
+}
+
+.supportBackgroundBlockDiscriptionBlock {
+  width: 280px;
+  height: 100px;
+  border-left: 3px solid #f14d34;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.supportBackgroundBlockDiscriptionBlockText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(256, 256, 256, 0.7);
+}
+
+@media (max-width: 1210px) {
+  .support {
+    height: 100%;
+  }
+
+  .supportBlock {
+    width: 760px;
+    height: 1200px;
+  }
+
+  .supportBlockOptions {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .supportBackground {
+    margin: 0;
+    position: relative;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .supportBackgroundBlock {
+    margin: 0;
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .supportLaptop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .support {
+    padding-top: 0;
+  }
+
+  .supportBlock {
+    width: 100%;
+    height: 2500px;
+  }
+
+  .supportBackground {
+    position: relative;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 85px;
+    margin: 0;
+  }
+
+  .supportBlockOptions {
+    display: flex;
+    height: 100%;
+  }
+
+  .supportLaptopImg {
+    width: 300px;
+    height: 250px;
+  }
+
+  .supportBackgroundBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .supportBackgroundBlockTitle {
+    text-align: left;
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .supportBackgroundBlockDiscription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .supportBackgroundBlockDiscriptionBlock {
+    margin-bottom: 20px;
+  }
+
+  .supportBlockOptionsCard {
+    width: 80%;
+  }
+
+  .supportBlockTitle {
+    font-size: 32px;
+  }
+}
